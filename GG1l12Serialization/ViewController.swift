@@ -10,21 +10,27 @@ import UIKit
 
 class ViewController: UIViewController {
   
+  let documentDirectoryPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first! as NSString
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
     writeToPlist(["keyInt" : 20])
+    print(getDictFromPlist())
   }
   
   func writeToPlist(_ dict: [String : Any]) {
     // path to documents directory
-    let documentDirectoryPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first
-    if let documentDirectoryPath = documentDirectoryPath as? NSString, let dictionary = dict as? NSDictionary {
+    
+    let dictionary = dict as NSDictionary
       dictionary.write(toFile: documentDirectoryPath.appendingPathComponent("dict.plist"), atomically: true)
       print(documentDirectoryPath)
-    }
   }
   
+  func getDictFromPlist() -> [String : Any] {
+    let dict = NSDictionary.init(contentsOfFile: documentDirectoryPath.appendingPathComponent("dict.plist"))
+    return dict as! [String : Any]
+  }
   
   
 }
