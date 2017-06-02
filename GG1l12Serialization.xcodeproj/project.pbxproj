@@ -13,6 +13,8 @@
 		4CF36F931EE1CFAC0047C593 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CF36F921EE1CFAC0047C593 /* Assets.xcassets */; };
 		4CF36F961EE1CFAC0047C593 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CF36F941EE1CFAC0047C593 /* LaunchScreen.storyboard */; };
 		4CF36F9E1EE1D55A0047C593 /* JSONGrabber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF36F9D1EE1D55A0047C593 /* JSONGrabber.swift */; };
+		4CF36FA01EE1DB980047C593 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF36F9F1EE1DB980047C593 /* Person.swift */; };
+		B5290305CF4209E5556FA811 /* Pods_GG1l12Serialization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A0028C847076381B0790B3 /* Pods_GG1l12Serialization.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		4CF36F951EE1CFAC0047C593 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CF36F971EE1CFAC0047C593 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CF36F9D1EE1D55A0047C593 /* JSONGrabber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONGrabber.swift; sourceTree = "<group>"; };
+		4CF36F9F1EE1DB980047C593 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		84A0028C847076381B0790B3 /* Pods_GG1l12Serialization.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GG1l12Serialization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C160D17C44B36925D20EAEF2 /* Pods-GG1l12Serialization.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GG1l12Serialization.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GG1l12Serialization/Pods-GG1l12Serialization.debug.xcconfig"; sourceTree = "<group>"; };
+		CA0B14492765979BB1919017 /* Pods-GG1l12Serialization.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GG1l12Serialization.release.xcconfig"; path = "Pods/Target Support Files/Pods-GG1l12Serialization/Pods-GG1l12Serialization.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5290305CF4209E5556FA811 /* Pods_GG1l12Serialization.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		034ADA0E3A0D213044AD3440 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C160D17C44B36925D20EAEF2 /* Pods-GG1l12Serialization.debug.xcconfig */,
+				CA0B14492765979BB1919017 /* Pods-GG1l12Serialization.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4CF36F7F1EE1CFAC0047C593 = {
 			isa = PBXGroup;
 			children = (
 				4CF36F8A1EE1CFAC0047C593 /* GG1l12Serialization */,
 				4CF36F891EE1CFAC0047C593 /* Products */,
+				034ADA0E3A0D213044AD3440 /* Pods */,
+				841152BB34EF07912FA2ADF1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,11 +78,20 @@
 				4CF36F8D1EE1CFAC0047C593 /* ViewController.swift */,
 				4CF36F9D1EE1D55A0047C593 /* JSONGrabber.swift */,
 				4CF36F8F1EE1CFAC0047C593 /* Main.storyboard */,
+				4CF36F9F1EE1DB980047C593 /* Person.swift */,
 				4CF36F921EE1CFAC0047C593 /* Assets.xcassets */,
 				4CF36F941EE1CFAC0047C593 /* LaunchScreen.storyboard */,
 				4CF36F971EE1CFAC0047C593 /* Info.plist */,
 			);
 			path = GG1l12Serialization;
+			sourceTree = "<group>";
+		};
+		841152BB34EF07912FA2ADF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84A0028C847076381B0790B3 /* Pods_GG1l12Serialization.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4CF36F9A1EE1CFAC0047C593 /* Build configuration list for PBXNativeTarget "GG1l12Serialization" */;
 			buildPhases = (
+				B75123E909FD85051BEF3F74 /* [CP] Check Pods Manifest.lock */,
 				4CF36F841EE1CFAC0047C593 /* Sources */,
 				4CF36F851EE1CFAC0047C593 /* Frameworks */,
 				4CF36F861EE1CFAC0047C593 /* Resources */,
+				B3A6246C9CBB2B3A8F81EC81 /* [CP] Embed Pods Frameworks */,
+				016FF7E5F86C2C1DF316B6AB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,6 +165,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		016FF7E5F86C2C1DF316B6AB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GG1l12Serialization/Pods-GG1l12Serialization-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3A6246C9CBB2B3A8F81EC81 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GG1l12Serialization/Pods-GG1l12Serialization-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B75123E909FD85051BEF3F74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4CF36F841EE1CFAC0047C593 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -142,6 +220,7 @@
 			files = (
 				4CF36F9E1EE1D55A0047C593 /* JSONGrabber.swift in Sources */,
 				4CF36F8E1EE1CFAC0047C593 /* ViewController.swift in Sources */,
+				4CF36FA01EE1DB980047C593 /* Person.swift in Sources */,
 				4CF36F8C1EE1CFAC0047C593 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +344,7 @@
 		};
 		4CF36F9B1EE1CFAC0047C593 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C160D17C44B36925D20EAEF2 /* Pods-GG1l12Serialization.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 278RE9W4W7;
@@ -278,6 +358,7 @@
 		};
 		4CF36F9C1EE1CFAC0047C593 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA0B14492765979BB1919017 /* Pods-GG1l12Serialization.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 278RE9W4W7;
