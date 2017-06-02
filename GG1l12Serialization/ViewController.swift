@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     // Do any additional setup after loading the view, typically from a nib.
     writeToPlist(["keyInt" : 20])
     print(getDictFromPlist())
+    JSONGrabber.init().sendRequest()
   }
   
   func writeToPlist(_ dict: [String : Any]) {

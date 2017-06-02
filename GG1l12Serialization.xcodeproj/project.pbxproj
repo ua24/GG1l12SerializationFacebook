@@ -12,6 +12,7 @@
 		4CF36F911EE1CFAC0047C593 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CF36F8F1EE1CFAC0047C593 /* Main.storyboard */; };
 		4CF36F931EE1CFAC0047C593 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CF36F921EE1CFAC0047C593 /* Assets.xcassets */; };
 		4CF36F961EE1CFAC0047C593 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CF36F941EE1CFAC0047C593 /* LaunchScreen.storyboard */; };
+		4CF36F9E1EE1D55A0047C593 /* JSONGrabber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF36F9D1EE1D55A0047C593 /* JSONGrabber.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		4CF36F921EE1CFAC0047C593 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CF36F951EE1CFAC0047C593 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CF36F971EE1CFAC0047C593 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CF36F9D1EE1D55A0047C593 /* JSONGrabber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONGrabber.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				4CF36F8B1EE1CFAC0047C593 /* AppDelegate.swift */,
 				4CF36F8D1EE1CFAC0047C593 /* ViewController.swift */,
+				4CF36F9D1EE1D55A0047C593 /* JSONGrabber.swift */,
 				4CF36F8F1EE1CFAC0047C593 /* Main.storyboard */,
 				4CF36F921EE1CFAC0047C593 /* Assets.xcassets */,
 				4CF36F941EE1CFAC0047C593 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CF36F9E1EE1D55A0047C593 /* JSONGrabber.swift in Sources */,
 				4CF36F8E1EE1CFAC0047C593 /* ViewController.swift in Sources */,
 				4CF36F8C1EE1CFAC0047C593 /* AppDelegate.swift in Sources */,
 			);
